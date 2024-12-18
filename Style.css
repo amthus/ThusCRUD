@@ -1,0 +1,397 @@
+/* Style global */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 95%;
+    max-width: 70rem; /* 1120px */
+    margin: 1rem auto;
+    background: #ffffff;
+    padding: 1.5rem;
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.8rem;
+    overflow-x: auto;
+}
+
+/* En-tête */
+h1, h2 {
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* Formulaire */
+form {
+    width: 100%;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 0.1rem solid #ddd;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 0.5rem rgba(76, 175, 80, 0.5);
+}
+
+textarea {
+    resize: vertical;
+    height: 10rem;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+    align-self: flex-start;
+}
+
+button:hover {
+    background-color: #6c45a0;
+    transform: scale(1.05);
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: white;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 0.8rem;
+    text-align: left;
+    color: #555;
+    font-size: 1rem;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    transition: background 0.3s;
+}
+
+/* Icônes et boutons */
+.action-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 1.2rem;
+    margin-right: 0.8rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    color: white;
+}
+
+/* Boutons avec couleurs spécifiques */
+.action-links a.update {
+    background-color: #4CAF50; /* Vert */
+}
+
+.action-links a.update:hover {
+    background-color: #45a049;
+}
+
+.action-links a.delete {
+    background-color: #E53935; /* Rouge */
+}
+
+.action-links a.delete:hover {
+    background-color: #D32F2F;
+}
+
+.action-links a.view {
+    background-color: #FB773C; /* Orange */
+}
+
+.action-links a.view:hover {
+    background-color: #F0622C;
+}
+
+.action-links a.other {
+    background-color: #4F1787; /* Violet */
+}
+
+.action-links a.other:hover {
+    background-color: #3E136D;
+}
+
+
+
+/* Formulaire pour voir un article */
+.view {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    background-color: #FB773C; /* Orange */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view:hover {
+    background-color: #EB3678; /* Rouge/rose foncé au survol */
+    transform: scale(1.05); /* Légère augmentation au survol */
+}
+
+.view:active {
+    background-color: #4F1787; /* Violet foncé au clic */
+}
+
+.view .fas {
+    margin-right: 0.5rem;
+}
+
+/* Conteneur principal pour l'article */
+.view-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Titre de l'article */
+.view-title {
+    font-size: 2rem;
+    color: #4F1787; /* Violet */
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Contenu de l'article */
+.view-content {
+    font-size: 1.1rem;
+    color: #333333;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Section des actions */
+.view-actions {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Bouton "Retour à la liste" */
+.view-back-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    background-color: #FB773C; /* Orange */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.view-back-button:hover {
+    background-color: #EB3678; /* Rouge */
+}
+
+.view-back-button:active {
+    background-color: #4F1787; /* Violet foncé */
+}
+
+.view-back-button .icon {
+    margin-right: 0.5rem;
+}
+
+
+
+
+
+
+
+
+/* Responsivité */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 0.6rem;
+    }
+
+    button, .action-links a {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    form {
+        gap: 0.8rem;
+    }
+
+    button, .action-links a {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+}
+
+/* Bouton Modifier (avec couleur verte) */
+.update {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    background-color: #4CAF50; /* Vert */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.update:hover {
+    background-color: #45a049; /* Vert foncé au survol */
+    transform: scale(1.05); /* Légère augmentation au survol */
+}
+
+.update:active {
+    background-color: #388E3C; /* Vert encore plus foncé au clic */
+}
+
+/* Bouton Supprimer (avec couleur rouge) */
+.delete {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    background-color: #FB3678; /* Rouge */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delete:hover {
+    background-color: #EB2670; /* Rouge foncé au survol */
+    transform: scale(1.05); /* Légère augmentation au survol */
+}
+
+.delete:active {
+    background-color: #D32F2F; /* Rouge encore plus foncé au clic */
+}
+
+.delete .fas, .update .fas {
+    margin-right: 0.5rem;
+}
+
+
+.view-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.view-back-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    background-color: #4CAF50; /* Couleur verte pour l'Accueil */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-back-button:hover {
+    background-color: #45a049; /* Vert foncé au survol */
+    transform: scale(1.05); /* Légère augmentation au survol */
+}
+
+.view-back-button:active {
+    background-color: #388E3C; /* Vert encore plus foncé au clic */
+}
+
+.view-back-button i {
+    margin-right: 0.5rem; /* Espacement entre l'icône et le texte */
+}
+
+/* Style pour le bouton vers Read.php (couleur différente) */
+.view-back-button:last-child {
+    background-color: #FB773C; /* Orange pour le lien vers Liste */
+}
+
+.view-back-button:last-child:hover {
+    background-color: #FB5F26; /* Orange foncé au survol */
+}
+
+.view-back-button:last-child:active {
+    background-color: #D8551D; /* Orange encore plus foncé au clic */
+}
