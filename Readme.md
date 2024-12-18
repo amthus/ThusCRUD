@@ -9,9 +9,9 @@ Ainsi, ce projet est un système de gestion d'articles avec des fonctionnalités
 
 Avant de commencer, assurez-vous d'avoir installé les outils suivants sur votre machine :
 
-- **PHP** (version 7.4 ou supérieure)
-- **MySQL** ou une autre base de données relationnelle compatible
-- **Un serveur local** comme XAMPP ou MAMP pour faire tourner le serveur PHP et MySQL
+- PHP (version 7.4 ou supérieure)
+- MySQL ou une autre base de données relationnelle compatible
+- Un serveur local comme XAMPP ou MAMP pour faire tourner le serveur PHP et MySQL
 
 ## Installation
 
@@ -71,11 +71,11 @@ Avant de commencer, assurez-vous d'avoir installé les outils suivants sur votre
 
 ## Fonctionnalités
 
-- **Afficher tous les articles** : Une page pour lister tous les articles enregistrés dans la base de données avec leurs titres et contenus.
-- **Ajouter un article** : Un formulaire pour permettre à un utilisateur d'ajouter un article à la base de données.
-- **Modifier un article** : Un formulaire pour modifier les informations d'un article existant.
-- **Supprimer un article** : Un lien permettant de supprimer un article spécifique de la base de données.
-- **Visualiser un article** : Un lien pour afficher un article en détail avec son contenu complet.
+- Afficher tous les articles : Une page pour lister tous les articles enregistrés dans la base de données avec leurs titres et contenus.
+- Ajouter un article : Un formulaire pour permettre à un utilisateur d'ajouter un article à la base de données.
+- Modifier un article : Un formulaire pour modifier les informations d'un article existant.
+- Supprimer un article : Un lien permettant de supprimer un article spécifique de la base de données.
+- Visualiser un article : Un lien pour afficher un article en détail avec son contenu complet.
 
 ## Structure du projet
 
